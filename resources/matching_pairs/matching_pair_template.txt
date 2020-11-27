@@ -1,0 +1,7 @@
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;REPLACE_WITH_IMAGE_FILENAME&quot; alt=&quot;REPLACE_WITH_IMAGE_FILENAME&quot; title=&quot;REPLACE_WITH_IMAGE_ALT_TEXT&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>REPLACE_WITH_HINDI_WORD</text>
+<fixed>0</fixed>
+</right-item></pair>

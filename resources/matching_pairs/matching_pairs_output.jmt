@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jmatch-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>Naresh</dc:creator>
+    <dc:title>Fruits</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>7</version>
+
+<data>
+<title>Fruits</title>
+
+<timer><seconds>60</seconds><include-timer>0</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<matching-exercise>
+<default-right-item>???
+</default-right-item>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;mango.png&quot; alt=&quot;mango.png&quot; title=&quot;mango.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>आम</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;watermelon.png&quot; alt=&quot;watermelon.png&quot; title=&quot;watermelon.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>तरबूज</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;papaya.png&quot; alt=&quot;papaya.png&quot; title=&quot;papaya.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>पपीता</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;date.png&quot; alt=&quot;date.png&quot; title=&quot;date.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>खजूर</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;coconut.png&quot; alt=&quot;coconut.png&quot; title=&quot;coconut.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>नारियल</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;pomegranate.png&quot; alt=&quot;pomegranate.png&quot; title=&quot;pomegranate.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>अनार</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;apple.png&quot; alt=&quot;apple.png&quot; title=&quot;apple.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>सेब</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;pear.png&quot; alt=&quot;pear.png&quot; title=&quot;pear.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>नाशपति</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;sugarcane.png&quot; alt=&quot;sugarcane.png&quot; title=&quot;sugarcane.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>ईख</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;lychee.png&quot; alt=&quot;lychee.png&quot; title=&quot;lychee.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>लीची</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;guava.png&quot; alt=&quot;guava.png&quot; title=&quot;guava.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>अमरूद</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;tamarind.png&quot; alt=&quot;tamarind.png&quot; title=&quot;tamarind.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>इमली</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;orange.png&quot; alt=&quot;orange.png&quot; title=&quot;orange.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>संतरा</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;plum.png&quot; alt=&quot;plum.png&quot; title=&quot;plum.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>आलूबुख़ारा</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;melon.png&quot; alt=&quot;melon.png&quot; title=&quot;melon.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>खरबूजा</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;banana.png&quot; alt=&quot;banana.png&quot; title=&quot;banana.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>केला</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;pineapple.png&quot; alt=&quot;pineapple.png&quot; title=&quot;pineapple.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>अनानास</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;peach.png&quot; alt=&quot;peach.png&quot; title=&quot;peach.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>आड़ू</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+<pair>
+<left-item><text>&amp;#x003C;img src=&quot;grapes.png&quot; alt=&quot;grapes.png&quot; title=&quot;grapes.png&quot; width=&quot;60&quot;/&amp;#x003E;</text>
+<fixed>1</fixed>
+</left-item>
+<right-item><text>अंगूर</text>
+<fixed>0</fixed>
+</right-item></pair>
+
+
+
+</matching-exercise>
+</data>
+
+<hotpot-config-file>
+<jmatch>
+<exercise-subtitle>Matching exercise</exercise-subtitle>
+<instructions>Match the items on the right to the items on the left.</instructions>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>1</questions-to-show>
+<shuffle-questions>0</shuffle-questions>
+<separate-javascript-file>0</separate-javascript-file>
+<next-caption>Next</next-caption>
+<delete-caption>Delete</delete-caption>
+<guess-correct>Correct! Well done.</guess-correct>
+<guess-incorrect>Sorry! Try again. </guess-incorrect>
+</jmatch>
+
+<global>
+<your-score-is>Your score is </your-score-is>
+<correct-indicator>&amp;#x2714;</correct-indicator>
+<incorrect-indicator>&amp;#x2718;</incorrect-indicator>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+<times-up>Your time is over!</times-up>
+<check-caption>Check</check-caption>
+<ok-caption>OK</ok-caption>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>medium</font-size>
+<page-bg-color>#C0C0C0</page-bg-color>
+<title-color>#000000</title-color>
+<ex-bg-color>#FFFFFF</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#000000</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+</global>
+</hotpot-config-file>
+</hotpot-jmatch-file>
+
