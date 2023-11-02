@@ -1,16 +1,8 @@
-package wordsearch;
+package wordsearch.util;
 
-import javax.xml.stream.events.Characters;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.text.BreakIterator;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.Locale;
 import java.util.Random;
-import java.util.Scanner;
 
 public class HindiLetterGenerator {
 

@@ -1,4 +1,4 @@
-package wordsearch;
+package wordsearch.type;
 
 import java.text.BreakIterator;
 import java.util.ArrayList;
@@ -12,14 +12,14 @@ public class HindiWord {
 
     public HindiWord(String word) {
         this.word = word;
-            Locale hindi = new Locale("hi", "IN");
+        Locale hindi = new Locale("hi", "IN");
         BreakIterator breaker = BreakIterator.getCharacterInstance(hindi);
         breaker.setText(word);
-        int start = breaker.first();
-        for (int end = breaker.next();
-             end != BreakIterator.DONE;
-             start = end, end = breaker.next()) {
-            this.characters.add(word.substring(start,end));
+        int startOfChar = breaker.first();
+        for (int endOfChar = breaker.next();
+             endOfChar != BreakIterator.DONE;
+             startOfChar = endOfChar, endOfChar = breaker.next()) {
+            this.characters.add(word.substring(startOfChar,endOfChar));
         }
     }
 

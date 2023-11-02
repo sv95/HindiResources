@@ -1,10 +1,11 @@
 package wordsearch;
 
-import wordsearch.HindiLetterGenerator;
-import wordsearch.HindiWord;
+import wordsearch.type.HindiWord;
+import wordsearch.util.HindiLetterGenerator;
+
+import static java.lang.String.format;
 
 import java.io.*;
-import static java.lang.String.format;
 import java.util.*;
 
 public class WordSearch {
@@ -18,7 +19,9 @@ public class WordSearch {
 
     final static int[][] dirs =
         // N, E, S, W, NE, SE, SW, NW
-        {{1, 0}, {0, 1}, {-1, 0}, {0, -1}, {1, 1}, {-1, 1}, {-1, -1}, {1, -1}};
+        // {{1, 0}, {0, 1}, {-1, 0}, {0, -1}, {1, 1}, {-1, 1}, {-1, -1}, {1, -1}};
+        // E, S, NE, SE
+        {{0, -1}, {1, 0}, {1, 1}, {1, -1}};
 
     private static int nRows;
     private static int nCols;
@@ -28,7 +31,6 @@ public class WordSearch {
     private static int wordCount;
     private static final List<HindiWord> wordsList = new ArrayList<>();
     private static Grid wordsearch;
-    private static final HindiWord HIDDEN_WORD = new HindiWord("सब्ज़ी");
 
     final static Random rand = new Random();
 
@@ -37,8 +39,11 @@ public class WordSearch {
             takeInput();
             calculateSize();
             wordsearch = createWordSearch();
+            System.out.println("Attempts: " + wordsearch.numAttempts);
+            System.out.println("Overlaps: " + wordsearch.overlaps);
+            printResult(wordsearch, "out/creations/wordsearch_solution.txt");
             fillInGaps();
-            printResult(wordsearch);
+            printResult(wordsearch, "out/creations/wordsearch.txt");
         } catch (FileNotFoundException e) {
             System.out.println("Words file not found");
         }
@@ -47,7 +52,7 @@ public class WordSearch {
     public static void takeInput() throws FileNotFoundException {
         wordCount = 0;
         // Create list of words
-        Scanner s = new Scanner(new File("resources/hindi_words.txt"));
+        Scanner s = new Scanner(new File("resources/wordsearch/hindi_words.txt"));
         while (s.hasNext()){
             wordsList.add(new HindiWord(s.next()));
             wordCount++;
@@ -187,32 +192,51 @@ public class WordSearch {
         }
     }
 
-    static void printResult(Grid grid) {
+    static void printResult(Grid grid, String filePath) {
+        StringBuilder sb = generatePrintableOutput(grid);
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));) {
+            writer.write(sb.toString());
+        } catch (IOException ioe) {
+            System.out.println("Caught ioe when printing result");
+            ioe.printStackTrace();
+        }
+    }
+
+    static StringBuilder generatePrintableOutput(Grid grid) {
+        final StringBuilder sb = new StringBuilder();
+
         if (grid == null || grid.numAttempts == 0) {
-            System.out.println("No grid to display");
-            return;
+            sb.append("No grid to display");
+            return sb;
         }
         int size = grid.solutions.size();
 
-        System.out.println("Attempts: " + grid.numAttempts);
-        System.out.println("Number of words: " + size);
-        System.out.println("Overlaps: " + grid.overlaps);
-
-        System.out.println("\n,0,1,2,3,4,5,6,7,8,9");
+        sb.append(",0,1,2,3,4,5,6,7,8,9");
         for (int r = 0; r < nRows; r++) {
-            System.out.printf("%n%d,", r);
-            for (int c = 0; c < nCols; c++)
-                System.out.printf("%s,", grid.cells[r][c]);
+            sb.append(String.format("%n%d,", r));
+            for (int c = 0; c < nCols; c++) {
+                final String cellVal = grid.cells[r][c];
+                if (cellVal == null) {
+                    sb.append(",");
+                } else {
+                    sb.append(String.format("%s,", cellVal));
+                }
+            }
         }
 
-        System.out.println("\n");
+/*
+        sb.append("\n");
 
         for (int i = 0; i < size - 1; i += 2) {
-            System.out.printf("%s   %s%n", grid.solutions.get(i),
-                              grid.solutions.get(i + 1));
+            sb.append(String.format("%s   %s%n", grid.solutions.get(i),
+                              grid.solutions.get(i + 1)));
         }
-        if (size % 2 == 1)
-            System.out.println(grid.solutions.get(size - 1));
+        if (size % 2 == 1) {
+            sb.append(String.format(grid.solutions.get(size - 1)));
+        }
+*/
+
+        return sb;
     }
 
 }
